@@ -3,6 +3,8 @@ import NavBar from "./NavBar";
 import React from "react";
 import Dogs from './dogs';
 import { useState } from "react";
+import Cart from './cart';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 
@@ -57,10 +59,23 @@ function App() {
   const [cartNum, setCartNum] = useState(0);
 
   return (
-    <div className="App">
+    <BrowserRouter className="App">
       <NavBar cartNum={cartNum} />
-      <Dogs dogs={dogs} onAdd={addToCart} onRemove={remFromCart} />
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Dogs
+              dogs={dogs}
+              onAdd={addToCart}
+              onRemove={remFromCart}
+            />
+          }
+        />
+        <Route path="/cart" element={<Cart/>} />
+      </Routes>
+
+    </BrowserRouter>
 
   );
 }

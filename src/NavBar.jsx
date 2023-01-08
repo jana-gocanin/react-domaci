@@ -1,14 +1,15 @@
 import React from "react";
 import { FaDog } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function NavBar({cartNum}) {
     return (
         <div className="navBar">
-            <a>Doniraj</a>
-            <a className="cart-items">
+            <Link to="/">Doniraj</Link>
+            <Link to = "/cart" className="cart-items">
                 <FaDog style={{ marginLeft: 10 }} />
                 <div className="cart-num">{cartNum}</div>
-            </a>
+            </Link>
         </div>
     )
 }
