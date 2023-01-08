@@ -1,14 +1,19 @@
 import React from 'react'
 import OneDog from './oneDog'
 
-const Dogs = () => {
-    const name = "Pas";
-    const description = "Opis psa";
+const Dogs = ({dogs, onAdd, onRemove}) => {
+    // const name = "Pas";
+    // const description = "Opis psa";
   return (
     <div className='all-dogs'>
-        <OneDog dogName={name} dogDesc={description} />
-        <OneDog dogName={name} dogDesc={description} />
-        <OneDog dogName={name} dogDesc={description} />
+      {dogs.map((dog) => (
+        <OneDog
+          key={dog.id}
+          dog={dog}
+          onAdd={onAdd}
+          onRemove={onRemove}
+        />
+        ))}
     </div>
   )
 }
