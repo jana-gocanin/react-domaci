@@ -14,8 +14,10 @@ const OneDog = ({dog, onAdd, onRemove}) => {
           {dog.description}   
         </p>
         <h3 className="card-title">Klikom na dugme + doniraš 100 rsd za {dog.title}!</h3>
-        <a className="btn" onClick={() => onAdd(dog.id)}><ImPlus/></a>
-        <a className="btn" onClick={() => onRemove(dog.id)}><ImMinus/></a>
+        <div className='card-btn-wrapper'>
+          <div className="btn" onClick={() => onAdd(dog.id)}><ImPlus /></div>
+          <div className="btn" onClick={() => onRemove(dog.id)}><ImMinus /></div>
+          </div>
       </div>
     </div>
   );

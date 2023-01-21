@@ -215,3 +215,7 @@ button:hover {
   font-size: 25px;
   width: 100%;
 }
+
+.card-btn-wrapper{
+  display: flex;
+}

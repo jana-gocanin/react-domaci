@@ -2,8 +2,6 @@ import React from 'react'
 import OneDog from './oneDog'
 
 const Dogs = ({dogs, onAdd, onRemove}) => {
-    // const name = "Pas";
-    // const description = "Opis psa";
   return (
     <div className='all-dogs'>
       {dogs.map((dog) => (
