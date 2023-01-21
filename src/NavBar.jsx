@@ -10,6 +10,7 @@ function NavBar({cartNum}) {
                 <FaDog style={{ marginLeft: 10 }} />
                 <div className="cart-num">{cartNum}</div>
             </Link>
+            <Link to="/contact" style={{ marginLeft: 20 }}>Kontakt</Link>
         </div>
     )
 }
