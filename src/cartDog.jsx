@@ -6,7 +6,7 @@ const CartDog = ({dog}) => {
   
   return (
     <div className="card-cart" style={design}>
-      <img className="card-img-left" src="https://picsum.photos/200" alt="Neka slika"/>
+      <img className="card-img-left" src="https://picsum.photos/id/237/300/200" alt="Neka slika"/>
       <div className="card-body">
         <h3 className="card-title">{dog.title}</h3>
         <p className="card-text">

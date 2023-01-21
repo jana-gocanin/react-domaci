@@ -7,61 +7,61 @@ const Home = ({cartDogs, setCartDogs, cartNum, setCartNum}) => {
   const [dogs, setDogs] = useState([
     {
       id: 1,
-      title: "Jedan pas",
-      description: "Opis nekog psa",
+      title: "Mimi",
+      description: "Mlada i vesela kuca",
       amount: 0
     },
     {
       id: 2,
-      title: "Drugi pas",
-      description: "Opis nekog psa",
+      title: "Kiki",
+      description: "RAZIGRANA",
       amount: 0
     },
     {
       id: 3,
-      title: "Treci pas",
+      title: "Bleki",
       description: "Opis nekog psa",
       amount: 0
     },
     {
       id: 4,
-      title: "Cetvrti pas",
-      description: "Opis nekog psa",
+      title: "Mici",
+      description: "Voli ljude",
       amount: 0
     },
     {
       id: 5,
-      title: "Peti pas",
-      description: "Opis nekog psa",
+      title: "Rex",
+      description: "Ceka svoj dom",
       amount: 0
     },
     {
       id: 6,
-      title: "Sesti pas",
+      title: "Max",
       description: "Opis nekog psa",
       amount: 0
     },
     {
       id: 7,
-      title: "Sedmi pas",
+      title: "Rea",
       description: "Opis nekog psa",
       amount: 0
     },
     {
       id: 8,
-      title: "Osmi pas",
+      title: "Ares",
       description: "Opis nekog psa",
       amount: 0
     },
     {
       id: 9,
-      title: "Deveti pas",
+      title: "Bibi",
       description: "Opis nekog psa",
       amount: 0
     },
     {
       id: 10,
-      title: "Deseti pas",
+      title: "Lili",
       description: "Opis nekog psa",
       amount: 0
     }
@@ -76,7 +76,7 @@ const Home = ({cartDogs, setCartDogs, cartNum, setCartNum}) => {
         dog.amount = dog.amount + 100;
         const a = cartNum + 100;
         setCartNum(a);
-        if (dog.amount === 1) {
+        if (dog.amount === 100) {
           updateCart(dog);
         } else {
           refreshCart();
