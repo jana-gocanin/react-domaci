@@ -204,3 +204,14 @@ button:hover {
   color: #333;
   box-shadow: 0px 0px 5px #333;
 }
+.cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tekst{
+  display: flex;
+  margin: 20px;
+  font-size: 25px;
+  width: 100%;
+}

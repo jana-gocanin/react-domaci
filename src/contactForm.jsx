@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState,useEffect, useRef } from "react";
 
 const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
@@ -20,12 +20,15 @@ const ContactForm = () => {
   }
 
   return (
+    
     <form
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
-    ><div className="cont">
+    >
+      <div className="tekst">Dobrodošli u naš virtuelni azil za pse! Na našem sajtu možete donirati novac za naše štićenike u samo par klikova. Osim toga, možete pogledati koji psi traže dom i kontaktirati nas ukoliko želite nekog da udomite putem jedostavne forme ispod.</div>
+      <div className="cont">
       <div className="forma">
         <input
           type="text"
