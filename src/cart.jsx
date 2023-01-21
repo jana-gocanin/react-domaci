@@ -1,7 +1,15 @@
 import React from "react";
+import CartDog from "./cartDog";
 
-const Cart = () => {
-    return <div>Your cart is empty.</div>;
+const Cart = ({cartDogs}) => {
+    return (
+        <div className="cart-container">
+          <h1>This is your cart</h1>
+          {cartDogs.map((dog) => (
+            <CartDog key={dog.id} dog={dog} />
+          ))}
+        </div>
+    );
 };
 
 export default Cart;

@@ -14,6 +14,12 @@ function App() {
         dog.amount = dog.amount + 100;
         const a = cartNum + 100;
         setCartNum(a);
+        if (dog.amount === 1) {
+          updateCart(dog);
+        } else {
+          refreshCart();
+        }
+
         console.log("dog id=", dog.id, "amount=", dog.amount);
       }
     }
@@ -26,6 +32,7 @@ function App() {
           dog.amount = dog.amount - 100;
           const a = cartNum - 100;
           setCartNum(a);
+          refreshCart();
           console.log("dog id=", dog.id, "amount=", dog.amount);
         } else {
           alert("Iznos za doniranje je 0.");
@@ -34,6 +41,17 @@ function App() {
     });
 
   };
+
+  const refreshCart = () => {
+    const newDogs = dogs.filter((dog) => dog.amount > 0);
+    setCartDogs(newDogs);
+  };
+
+  const updateCart = (dog) => {
+    setCartDogs([...cartDogs, dog]);
+  };
+
+
 
   const [dogs, setDogs] = useState([
     {
@@ -57,6 +75,7 @@ function App() {
   ]);
 
   const [cartNum, setCartNum] = useState(0);
+  const [cartDogs, setCartDogs] = useState([]);
 
   return (
     <BrowserRouter className="App">
@@ -72,7 +91,7 @@ function App() {
             />
           }
         />
-        <Route path="/cart" element={<Cart/>} />
+        <Route path="/cart" element={<Cart cartDogs={cartDogs} />} />
       </Routes>
 
     </BrowserRouter>
