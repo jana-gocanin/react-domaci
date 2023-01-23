@@ -54,6 +54,20 @@ body {
 .all-dogs {
   display: flex;
   margin: 20px;
+  
+}
+
+.all-dogs::before{
+  content: "";
+  background-image: url(img/Dog_face_pattern_and_bones.jpg);
+  background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+      z-index: -5;
 }
 
 .card {
@@ -224,4 +238,17 @@ button:hover {
 .psi-korpa{
   display: flex;
   flex-wrap: wrap;
+}
+
+.cont::before{
+  content: "";
+  background-image: url(img/Dog_face_pattern_and_bones.jpg);
+  background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+      z-index: -5;
 }
