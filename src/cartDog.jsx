@@ -6,13 +6,13 @@ const CartDog = ({dog}) => {
   
   return (
     <div className="card-cart" style={design}>
-      <img className="card-img-left" src="https://picsum.photos/id/237/300/200" alt="Neka slika"/>
+      <img className="card-img-left" src={dog.pic} alt="Neka slika" width="200px" height="200px"/>
       <div className="card-body">
         <h3 className="card-title">{dog.title}</h3>
         <p className="card-text">
           {dog.description}   
         </p>
-              <h3>Amount: {dog.amount }</h3>
+              <h3>Iznos: {dog.amount }</h3>
       </div>
     </div>
   );

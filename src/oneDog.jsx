@@ -2,12 +2,12 @@ import React from 'react'
 import { ImPlus, ImMinus } from "react-icons/im";
 
 const OneDog = ({dog, onAdd, onRemove}) => {
-    const design = { margin: 10, borderStyle: "dashed" };
+    const design = { margin: 10, borderStyle: "double" };
     
   
   return (
     <div className="card" style={design}>
-      <img className="card-img-top" src="https://picsum.photos/id/237/200/200" alt="Neka slika"/>
+      <img className="card-img-top" src={dog.pic} alt="Neka slika" width="200px" />
       <div className="card-body">
         <h3 className="card-title">{dog.title}</h3>
         <p className="card-text">

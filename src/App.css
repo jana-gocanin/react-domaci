@@ -21,7 +21,7 @@ body {
   min-height: 70px;
   padding-left: 25px;
   font-size: 30px;
-  justify-content: center;
+  justify-content: space-evenly;
   
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .btn {
-  background-color: cornflowerblue;
+  background-color: rgb(237, 100, 212);
   color: white;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -140,7 +140,7 @@ a {
 .pagination .page-number {
 	font-size: 16px;
 	font-weight: 600;
-	color: #00a8ff;
+	color: #b82fad;
 	background: #fff;
 	padding: 10px 20px;
 	border-radius: 10px;
@@ -150,16 +150,16 @@ a {
 
 .pagination .page-number:hover {
 	color: #fff;
-	background: #00a8ff;
+	background: #c124b7;
 }
 
 .pagination .active {
 	color: #fff;
-	background: #00a8ff;
+	background: #d425e4;
 }
 
 .pagination .active:hover {
-	color: #00a8ff;
+	color: #ba50c4;
 	background: #fff;
 }
 
@@ -218,4 +218,10 @@ button:hover {
 
 .card-btn-wrapper{
   display: flex;
+  justify-content: center;
+}
+
+.psi-korpa{
+  display: flex;
+  flex-wrap: wrap;
 }

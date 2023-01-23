@@ -9,61 +9,71 @@ const Home = ({cartDogs, setCartDogs, cartNum, setCartNum}) => {
       id: 1,
       title: "Mimi",
       description: "Mlada i vesela kuca",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/1025/300/300"
     },
     {
       id: 2,
       title: "Kiki",
       description: "RAZIGRANA",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/837/300/300"
     },
     {
       id: 3,
       title: "Bleki",
       description: "Opis nekog psa",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/237/300/300"
     },
     {
       id: 4,
       title: "Mici",
       description: "Voli ljude",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/1012/300/300"
     },
     {
       id: 5,
       title: "Rex",
       description: "Ceka svoj dom",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/659/300/300"
     },
     {
       id: 6,
       title: "Max",
       description: "Opis nekog psa",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/1062/300/300"
     },
     {
       id: 7,
       title: "Rea",
       description: "Opis nekog psa",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/1012/300/300"
     },
     {
       id: 8,
       title: "Ares",
       description: "Opis nekog psa",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/718/300/300"
     },
     {
       id: 9,
       title: "Bibi",
       description: "Opis nekog psa",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/169/300/300"
     },
     {
       id: 10,
       title: "Lili",
       description: "Opis nekog psa",
-      amount: 0
+      amount: 0,
+      pic: "https://picsum.photos/id/659/300/300"
     }
   ]);
 
