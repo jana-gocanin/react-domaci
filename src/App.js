@@ -8,7 +8,7 @@ import Home from './home';
 
 
 
-function App() {
+function App()  {
   const [cartDogs, setCartDogs] = useState([]);
   const [cartNum, setCartNum] = useState(0);
   return (
